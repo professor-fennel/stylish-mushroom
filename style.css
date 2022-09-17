@@ -1,0 +1,119 @@
+@font-face {
+  font-family: libre;
+  src: url('fonts/libre-baskerville/LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+  font-family: libre-bold;
+  src: url('fonts/libre-baskerville/LibreBaskerville-Bold.ttf');
+}
+
+body {
+  margin: 0px;
+  padding: 40px;
+  background: rgb(78,35,18);
+  background: linear-gradient(180deg, rgba(108,53,31,1) 0%, rgba(42,32,16,1) 60%);
+  color: rgba(255,228,210,1);
+  min-height: 100%;
+  font-family: libre;
+  /* width: 100%; */
+}
+::selection {
+  background: rgb(255,99,7);
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: libre-bold;
+}
+
+h1 {
+  margin: 0px;
+}
+
+#mycelium-area {
+  border-radius: 40px;
+  width: 90%;
+  margin-left: calc(5% - 40px);
+  padding: 40px;
+  background: rgba(42,22,16,1)
+}
+
+#search-area {
+  text-align: center;
+  font-size: 32px;
+}
+#search-area input {
+  padding: 8px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 24px;
+  margin: 0px;
+}
+#search-area input[type=text] {
+  margin-top: 4px;
+  padding: 16px;
+  vertical-align: top;
+  text-align: left;
+  width: 64%;
+  max-width: 600px;
+  background-color: rgb(255,243,236);
+  color: rgb(186,69,0);
+  margin-right: 16px;
+  border-style: none;
+  margin-bottom: 16px;
+  /* height: 40px; */
+}
+#search-area input[type=button] {
+  vertical-align: top;
+  cursor: pointer;
+  background-color: rgb(255,99,7);
+  font-size: 32px;
+  padding: 12px;
+  /* height: 40px; */
+}
+#search-area input[type=button]:hover {
+  background-color: white;
+}
+
+details {
+  margin-left: 1em;
+  /* margin-bottom: 4px; */
+}
+details summary > * {
+  display: inline;
+}
+summary {
+  margin-left: -2em;
+  cursor: pointer;
+}
+
+
+#spore-area {
+  padding: 4px 40px;
+  /* text-align: center; */
+}
+#spore-area p {
+  text-align: left;
+  margin: 4px 0px;
+}
+
+a:link {
+  color: rgb(255,240,230);
+  padding: 2px 4px;
+  /* color: rgb(255, 80, 95); */
+}
+a:visited {
+  color: rgb(255,240,230);
+  /* color: rgb(255, 100, 155); */
+}
+a:hover {
+  color: rgb(78,35,18);
+  background: rgba(255,228,210,1);
+  border-radius: 4px;
+  /* background-color: rgb(80, 100, 150); */
+}
+a:active {
+  /* color: rgb(50, 50, 255); */
+  background-color: rgb(255, 255, 150);
+}
