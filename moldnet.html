@@ -26,59 +26,18 @@
     <div id='mycelium-area'>
       <div id='search-area'>
         <input type="text" id='search-bar'/>
-        <input type='button' value='🍄🔎' id='search-button'/>
+        <input type='button' onclick="forage()" value='🍄🔎' id='search-button'/>
+        <div id="results-area">
+          <ul id="results-list"></ul>
+        </div>
       </div>
       <br/><br/>
       <div id='spore-area'>
         <!-- <p>🍄<input type="text" id='spore-bar'/></p> -->
         <p><details>
           <summary><p>spores to search</p></summary>
-          <div id='spore-list'>
-            <p>https://the-eye.eu/public/Books</p>
-            <p>https://volvoxvault.com/archive</p>
-            <p>https://www.sheafitz.com/</p>
-            <p>http://justus.ws/</p>
-            <p>https://www.brendanschlagel.com/blog</p>
-            <p>https://marthahipley.com/</p>
-            <p>https://northhouse.org/course-archive</p>
-            <p>https://elizabethcase.net/</p>
-            <p>https://curatella.com/</p>
-            <p>https://www.colingorrie.com/</p>
-            <p>https://tiana.computer/</p>
-            <p>http://christinenovotny.com/</p>
-            <p>https://multiverse.plus/abraham</p>
-            <p>https://fireflysanctuary.today/</p>
-            <p>https://www.kobakant.at/DIY/</p>
-            <p>https://www.robinsloan.com/notes/</p>
-            <p>https://distill.pub/</p>
-            <p>https://www.uliwestphal.de/</p>
-            <p>https://scarletimprint.com/journal</p>
-            <p>http://proudft.com/index.html</p>
-            <p><p>
-            <details>
-              <summary><p>https://fee.cool/spores.json</p></summary>
-              <p>https://www.ribbonfarm.com/</p>
-              <p>http://www.creweltech.com/</p>
-              <p>https://www.increpare.com/</p>
-              <p>https://www.timhunkin.com/</p>
-              <details>
-                <summary><p>https://gnostic.technology/spores.json</p></summary>
-                <p>https://www.hermetechnics.life/</p>
-                <p>https://solarpunk.cool/</p>
-                <p>https://runesoup.com/blog/</p>
-                <p>https://www.terriwindling.com/blog/</p>
-              </details>
-            </details>
-            <p>
-            <details>
-              <summary><p>https://yet.earth/spores.json</p></summary>
-              <p>https://jenniferjacobs.mat.ucsb.edu/</p>
-              <p>https://www.sbnation.com/</p>
-              <p>https://マリウス.com/</p>
-            </details>
-          </div>
-        </details></p>
-      </div>
+          <div id='spores'></div>
+      </details>
     </div>
 
 
