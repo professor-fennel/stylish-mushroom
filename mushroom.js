@@ -31,8 +31,9 @@ const mycilCallback = (data) => {
           "<p><b><i><a href='" + n + "'>" + n + "</a></i></b></p>";
       }
     });
-    data?.hyphae.forEach((n) => {
+    data.hyphae?.forEach((n) => {
       if (hyphae.indexOf(n) === -1) {
+        hyphae.push(n);
         parent = groupId;
         JSONP.request(n);
       }
