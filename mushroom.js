@@ -75,15 +75,17 @@ forage = () => {
     )
       .then((d) => d.json())
       .then((res) => {
-        const resultsArr = res.results.map(
-          (result) =>
-            `<li><a href='${result.href}'>${result.title}</a><br /><p>${result.content}</p>`
-        );
-        resultsList.innerHTML += `<h2>${spores[i]}</h2><ul>`;
-        resultsArr.forEach((result) => {
-          resultsList.innerHTML += result;
-        });
-        resultsList.innerHTML += "</ul>";
+        if (res.results) {
+          const resultsArr = res.results.map(
+            (result) =>
+              `<li><a href='${result.href}'>${result.title}</a><br /><p>${result.content}</p></li>`
+          );
+          resultsList.innerHTML += `<h2>${spores[i]}</h2><ul>`;
+          resultsArr.forEach((result) => {
+            resultsList.innerHTML += result;
+          });
+          resultsList.innerHTML += "</ul>";
+        }
       });
   }
 };
