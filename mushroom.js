@@ -69,7 +69,7 @@ forage = () => {
   const query = document.getElementById("search-bar").value;
   const resultsList = document.getElementById("results-area");
 
-  for (let i = 0; i < Math.min(spores.length, 30); i++) {
+  for (let i = 0; i < Math.min(spores.length, 5); i++) {
     fetch(
       `https://bitter-sky-6136.fly.dev/?q=${query} site:${spores[i]}&format=json`
     )
