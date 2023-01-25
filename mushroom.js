@@ -79,13 +79,13 @@ forage = () => {
         if (res.results.length) {
           const resultsArr = res.results.map(
             (result) =>
-              `<li><a href='${result.url}'>${result.title}</a><br /><p>${result.content}</p></li>`
+              `<a href='${result.url}'>${result.title}</a><br /><p>${result.content}</p>`
           );
-          resultsList.innerHTML += `<h2>${spores[i]}</h2><ul>`;
+          resultsList.innerHTML += `<details> <summary>${spores[i]}</summary>`;
           resultsArr.forEach((result) => {
             resultsList.innerHTML += result;
           });
-          resultsList.innerHTML += "</ul>";
+          resultsList.innerHTML += "</details>";
         }
       });
   }
