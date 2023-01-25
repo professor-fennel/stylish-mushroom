@@ -47,15 +47,17 @@ h1 {
 #search-area {
   text-align: left;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
 }
-#search-area input {
+#search-area div input {
   padding: 8px;
   font-size: 24px;
   text-align: center;
   border-radius: 24px;
   margin: 0px;
 }
-#search-area input[type="text"] {
+#search-area div input[type="text"] {
   margin-top: 4px;
   padding: 16px;
   vertical-align: top;
