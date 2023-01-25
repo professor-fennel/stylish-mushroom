@@ -70,7 +70,7 @@ forage = () => {
   const resultsList = document.getElementById("results-area");
 
   for (let i = 0; i < Math.min(spores.length, 30); i++) {
-    fetch(`http://fee.cool:49156/?q=${query} site:${spores[i]}&format=json`)
+    fetch(`https://moldy.fly.dev/?q=${query} site:${spores[i]}&format=json`)
       .then((d) => d.json())
       .then((res) => {
         const resultsArr = res.results.map(
