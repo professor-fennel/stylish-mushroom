@@ -70,23 +70,24 @@ forage = () => {
   const resultsList = document.getElementById("results-area");
 
   for (let i = 0; i < Math.min(spores.length, 5); i++) {
-    const detailsNode = document.createElement("details");
     fetch(
       `https://bitter-sky-6136.fly.dev/?q=${query} site:${spores[i]}&format=json`
     )
       .then((d) => d.json())
       .then((res) => {
         if (res.results.length) {
+          const detailsNode = document.createElement("details");
           const resultsArr = res.results.map(
             (result) =>
               `<a href='${result.url}'>${result.title}</a><br /><p>${result.content}</p>`
           );
           detailsNode.innerHTML += `<summary>${spores[i]}</summary>`;
           resultsArr.forEach((result) => {
-            resultsList.innerHTML += result;
+            detailsNode.innerHTML += result;
           });
+
+          resultsList.appendChild(detailsNode);
         }
       });
-    resultsList.appendChild(detailsNode);
   }
 };
