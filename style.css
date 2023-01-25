@@ -50,6 +50,12 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
+.input-wrapper {
+  display: flex;
+  width: 100%;
+}
+
 #search-area div input {
   padding: 8px;
   font-size: 24px;
@@ -62,13 +68,11 @@ h1 {
   padding: 16px;
   vertical-align: top;
   text-align: left;
-  width: 64%;
-  max-width: 600px;
+  width: 100%;
   background-color: rgb(255, 243, 236);
   color: rgb(186, 69, 0);
   margin-right: 16px;
   border-style: none;
-  margin-bottom: 16px;
   /* height: 40px; */
 }
 #search-area input[type="button"] {
