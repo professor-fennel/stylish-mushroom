@@ -75,6 +75,7 @@ forage = () => {
     )
       .then((d) => d.json())
       .then((res) => {
+        console.log(res);
         if (res.results.length) {
           const resultsArr = res.results.map(
             (result) =>
